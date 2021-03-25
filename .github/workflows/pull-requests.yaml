@@ -1,0 +1,24 @@
+name: Check Python Interpreters
+
+on:
+  pull_request:
+  # allow to easily run this on demand, without a PR 
+  workflow_dispatch:
+  
+jobs:
+
+  check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+      
+      - name: install pip
+        run: pip install pytest
+      
+      - name: run pytest
+        run: pytest jformat
