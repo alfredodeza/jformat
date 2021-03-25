@@ -17,8 +17,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
       
-      - name: install pip
-        run: pip install pytest
+      - name: install tox
+        run: pip install tox
       
-      - name: run pytest
-        run: pytest jformat
+      - name: run tox and pytest
+        run: tox -v
