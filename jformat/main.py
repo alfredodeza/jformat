@@ -1,7 +1,6 @@
 from . import reformat
 import argparse
 import os
-from importlib.metadata import version
 import sys
 import logging
 
