@@ -8,10 +8,10 @@ class TestLongComparisons():
     def teardown_class(self):
         pass
 
-    def setup(self):
+    def setup_method(self):
         self.first = "this is one very long string"
 
-    def teardown(self):
+    def teardown_method(self):
         pass
 
     def utility(self, contents=''):

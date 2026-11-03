@@ -1,7 +1,6 @@
 from . import reformat
 import argparse
 import os
-import pkg_resources
 import sys
 import logging
 
