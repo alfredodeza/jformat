@@ -1,7 +1,7 @@
 from . import reformat
 import argparse
 import os
-import pkg_resources
+from importlib.metadata import version
 import sys
 import logging
 
